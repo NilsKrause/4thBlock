@@ -3,6 +3,7 @@ import { Grid, Position, D2 } from './interfaces';
 import { ErrNotEnoughPlayers } from './errors';
 
 export class Game {
+  private id: string
   private players: Player[];
   private round: number;
   private turn: number; // it just represents the index of the players
